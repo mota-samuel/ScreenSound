@@ -3,6 +3,5 @@
 internal interface IAvaliacao
 {
     void AdicionarNota(Avaliacao nota);
-
-     double Media {  get; }
+    double Media {  get; }
 }

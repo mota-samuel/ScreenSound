@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace ScreenSound.Modelos;
+﻿namespace ScreenSound.Modelos;
 internal class Banda : IAvaliacao
 {
     private List<Album> albuns = new List<Album>();
@@ -16,7 +14,7 @@ internal class Banda : IAvaliacao
     {
         get
         {
-            if(notas.Count == 0) return 0; // se nao tiver nenhuma nota declarada returnar zero
+            if(notas.Count == 0) return 0; // se nao tiver nenhuma nota declarada retornar zero
             else return notas.Average(a => a.Nota);//  se nao realizar a media
         }
     }
