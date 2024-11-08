@@ -14,7 +14,6 @@ internal class MenuExibirDetalhes : Menu
         {
             Banda banda = bandasRegistradas[nomeDaBanda];
             Console.WriteLine(banda.Resumo);
-            //List<int> notasDaBanda = bandasRegistradas[nomeDaBanda];
             Console.WriteLine($"\nA média da banda {nomeDaBanda} é {banda.Media}.");
             Console.WriteLine("\nDiscografia:");
             foreach(Album album in banda.Albuns)

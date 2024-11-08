@@ -1,5 +1,6 @@
 ﻿using ScreenSound.Menus;
 using ScreenSound.Modelos;
+using OpenAI_API;
 
 Banda ira = new Banda("Ira");
 ira.AdicionarNota(new Avaliacao(10));
@@ -57,15 +58,12 @@ void ExibirOpcoesDoMenu()
     {
         Menu menuExibicao = opcoes[opcaoEscolhidaNumerica];
         menuExibicao.Executar(bandasRegistradas);
-        if(opcaoEscolhidaNumerica > 0) { ExibirOpcoesDoMenu(); }
+        if (opcaoEscolhidaNumerica > 0) { ExibirOpcoesDoMenu(); }
 
+        else
+        {
+            Console.WriteLine("Opção inválida");
+        }
     }
-    else
-    {
-        Console.WriteLine("Opção inválida");
-    }
-
-
-}  
-
-ExibirOpcoesDoMenu();
+}
+    ExibirOpcoesDoMenu();
